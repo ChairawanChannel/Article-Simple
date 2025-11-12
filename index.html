@@ -16,14 +16,12 @@
   </head>
 
   <body class="bg-slate-950 text-gray-200">
-    <!-- Navbar -->
     <nav
       class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
             <button
               type="button"
               command="--toggle"
@@ -76,7 +74,6 @@
             </div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
-                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                 <a
                   href="#"
                   aria-current="page"
@@ -96,7 +93,6 @@
       </div>
       <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
         <div class="space-y-1 px-2 pt-2 pb-3">
-          <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
           <a
             href="#"
             aria-current="page"
@@ -123,11 +119,9 @@
     </nav>
 
     <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-10 py-10 px-6">
-      <!-- MAIN ARTICLE -->
       <article
         class="lg:col-span-2 bg-slate-900 rounded-lg shadow-xl overflow-hidden border border-slate-800"
       >
-        <!-- HEADER IMAGE -->
         <div class="h-60 w-full overflow-hidden">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/039/642/039/small/ssd-disk-drive-placed-on-wooden-surface-high-speed-ssd-ssd-sata-port-photo.jpg"
@@ -136,7 +130,6 @@
           />
         </div>
 
-        <!-- CONTENT -->
         <div class="p-10 space-y-10">
           <h1 class="text-4xl font-semibold leading-tight text-white">
             Memory Sekunder: Fungsi, Jenis & Perbandingan
@@ -147,14 +140,18 @@
           </p>
 
           <p class="leading-relaxed text-gray-300">
-            Memory sekunder adalah media penyimpanan permanen …
+            Memory sekunder adalah media penyimpanan permanen
+            <strong>(non-volatile)</strong> pada komputer yang berfungsi untuk
+            menyimpan data dalam jangka panjang, bahkan ketika komputer tidak
+            mendapat aliran listrik. Berbeda dengan memori primer (RAM) yang
+            datanya hilang saat listrik mati, memori sekunder menyimpan sistem
+            operasi, aplikasi, dan semua file pribadi Anda seperti dokumen,
+            foto, dan video.
           </p>
 
-          <!-- OPTICAL DRIVE -->
           <section id="optical" class="space-y-4">
             <h2 class="text-2xl font-semibold text-amber-400">Optical Drive</h2>
 
-            <!-- IMAGE -->
             <div
               class="w-full h-52 overflow-hidden rounded border border-slate-700"
             >
@@ -166,23 +163,32 @@
             </div>
 
             <p class="leading-relaxed text-gray-300">
-              Optical drive menggunakan laser untuk membaca …
+              Optical drive menggunakan laser untuk membaca dan menulis data
+              pada piringan optik seperti <strong>CD, DVD, dan Blu-ray</strong>.
+              Teknologi ini populer pada era 90-an hingga 2000-an untuk
+              distribusi software, film, dan musik. Saat ini, penggunaannya
+              sudah sangat berkurang dan jarang ditemukan pada laptop modern.
             </p>
 
             <ul class="list-disc ml-6 text-gray-300">
               <li>
-                <strong class="text-amber-400">Fungsi:</strong> Penyimpanan …
+                <strong class="text-amber-400">Fungsi:</strong> Penyimpanan dan
+                distribusi media (film, musik, game), instalasi software lama,
+                dan backup arsip.
               </li>
               <li>
-                <strong class="text-amber-400">Kelebihan:</strong> Murah …
+                <strong class="text-amber-400">Kelebihan:</strong> Murah (harga
+                piringan), baik untuk arsip *cold storage* (jika disimpan dengan
+                benar).
               </li>
               <li>
-                <strong class="text-amber-400">Kekurangan:</strong> Kapasitas …
+                <strong class="text-amber-400">Kekurangan:</strong> Kapasitas
+                kecil, kecepatan baca/tulis sangat lambat, mudah tergores, dan
+                sudah usang.
               </li>
             </ul>
           </section>
 
-          <!-- HDD -->
           <section id="hdd" class="space-y-4">
             <h2 class="text-2xl font-semibold text-amber-400">
               Hard Disk Drive (HDD)
@@ -197,22 +203,31 @@
               />
             </div>
             <p class="leading-relaxed text-gray-300">
-              HDD menggunakan piringan magnetis …
+              HDD menggunakan piringan magnetis yang berputar cepat (disebut
+              *platter*) dan sebuah *head* (kepala baca/tulis) mekanis untuk
+              mengakses data. Selama puluhan tahun, HDD adalah standar utama
+              penyimpanan data komputer karena harganya yang murah dan
+              kapasitasnya yang besar.
             </p>
             <ul class="list-disc ml-6 text-gray-300">
               <li>
-                <strong class="text-amber-400">Fungsi:</strong> Penyimpanan …
+                <strong class="text-amber-400">Fungsi:</strong> Penyimpanan data
+                massal (video, foto, dokumen), backup data, penyimpanan sekunder
+                pada PC.
               </li>
               <li>
-                <strong class="text-amber-400">Kelebihan:</strong> Harga murah …
+                <strong class="text-amber-400">Kelebihan:</strong> Harga murah
+                per Gigabyte (GB), tersedia dalam kapasitas yang sangat besar
+                (hingga 20TB atau lebih).
               </li>
               <li>
-                <strong class="text-amber-400">Kekurangan:</strong> Lambat …
+                <strong class="text-amber-400">Kekurangan:</strong> Lambat
+                (karena ada komponen mekanis), rentan terhadap guncangan,
+                berisik, dan mengonsumsi daya lebih besar.
               </li>
             </ul>
           </section>
 
-          <!-- SSD -->
           <section id="ssd" class="space-y-4">
             <h2 class="text-2xl font-semibold text-amber-400">
               Solid State Drive (SSD)
@@ -228,24 +243,31 @@
             </div>
 
             <p class="leading-relaxed text-gray-300">
-              SSD menggunakan chip flash …
+              SSD menggunakan chip flash memory (NAND flash) untuk menyimpan
+              data secara elektronik. Tidak ada komponen bergerak di dalamnya.
+              Hal ini membuat SSD jauh lebih cepat, lebih senyap, dan lebih
+              tahan banting dibandingkan HDD. SSD umumnya terhubung melalui
+              interface SATA.
             </p>
 
             <ul class="list-disc ml-6 text-gray-300">
               <li>
-                <strong class="text-amber-400">Fungsi:</strong> Menyimpan OS …
+                <strong class="text-amber-400">Fungsi:</strong> Menyimpan OS
+                (Sistem Operasi) agar *booting* cepat, *loading* game dan
+                aplikasi, penyimpanan utama laptop dan PC modern.
               </li>
               <li>
-                <strong class="text-amber-400">Kelebihan:</strong> Cepat …
+                <strong class="text-amber-400">Kelebihan:</strong> Cepat
+                (kecepatan baca/tulis tinggi), *loading* instan, tahan
+                guncangan, senyap, dan hemat daya.
               </li>
               <li>
                 <strong class="text-amber-400">Kekurangan:</strong> Lebih mahal
-                …
+                per GB dibandingkan HDD, meskipun harganya terus turun drastis.
               </li>
             </ul>
           </section>
 
-          <!-- NVMe -->
           <section id="nvme" class="space-y-4">
             <h2 class="text-2xl font-semibold text-amber-400">NVMe</h2>
             <div
@@ -259,24 +281,33 @@
             </div>
 
             <p class="leading-relaxed text-gray-300">
-              NVMe (Non-Volatile Memory Express) …
+              NVMe (Non-Volatile Memory Express) adalah protokol komunikasi yang
+              dirancang khusus untuk SSD. NVMe SSD biasanya menggunakan *form
+              factor* M.2 dan terhubung langsung ke slot PCIe *motherboard*,
+              melewati *bottleneck* SATA. Ini menghasilkan kecepatan yang jauh
+              lebih kencang daripada SSD SATA.
             </p>
 
             <ul class="list-disc ml-6 text-gray-300">
               <li>
-                <strong class="text-amber-400">Fungsi:</strong> Penyimpanan …
+                <strong class="text-amber-400">Fungsi:</strong> Penyimpanan
+                ultra-cepat untuk *workstation* profesional (editing video 8K,
+                rendering 3D), *gamers* antusias, dan server yang butuh latensi
+                sangat rendah.
               </li>
               <li>
                 <strong class="text-amber-400">Kelebihan:</strong> Sangat cepat
-                …
+                (kecepatan tertinggi di pasar), latensi super rendah, *form
+                factor* M.2 yang ringkas.
               </li>
               <li>
-                <strong class="text-amber-400">Kekurangan:</strong> Mahal …
+                <strong class="text-amber-400">Kekurangan:</strong> Mahal,
+                membutuhkan *motherboard* yang kompatibel (slot M.2 PCIe), dan
+                bisa menjadi panas saat beban kerja tinggi.
               </li>
             </ul>
           </section>
 
-          <!-- FLASHDISK -->
           <section id="flashdisk" class="space-y-4">
             <h2 class="text-2xl font-semibold text-amber-400">Flashdisk</h2>
             <div
@@ -290,37 +321,130 @@
             </div>
 
             <p class="leading-relaxed text-gray-300">
-              Flashdisk adalah perangkat portable …
+              Flashdisk (atau USB Drive) adalah perangkat portable yang
+              menggunakan *flash memory* dan terhubung melalui port USB. Ini
+              adalah bentuk memori sekunder eksternal yang paling umum digunakan
+              untuk memindahkan data antar perangkat dengan mudah.
             </p>
 
             <ul class="list-disc ml-6 text-gray-300">
               <li>
-                <strong class="text-amber-400">Fungsi:</strong> Transfer data …
+                <strong class="text-amber-400">Fungsi:</strong> Transfer data
+                antar komputer, penyimpanan dokumen portabel, *bootable drive*
+                untuk instalasi OS.
               </li>
               <li>
-                <strong class="text-amber-400">Kelebihan:</strong> Kecil …
+                <strong class="text-amber-400">Kelebihan:</strong> Kecil,
+                ringan, sangat portabel, dan kompatibel secara universal dengan
+                port USB.
               </li>
               <li>
-                <strong class="text-amber-400">Kekurangan:</strong> Mudah hilang
-                …
+                <strong class="text-amber-400">Kekurangan:</strong> Mudah
+                hilang, kapasitasnya umumnya lebih kecil, dan kecepatannya
+                bervariasi (tergantung standar USB 2.0, 3.x).
               </li>
             </ul>
           </section>
 
-          <!-- PERBANDINGAN -->
           <section id="perbandingan" class="space-y-4">
             <h2 class="text-2xl font-semibold text-amber-400">
               Perbandingan Singkat
             </h2>
+
+            <div
+              class="overflow-x-auto relative shadow-md sm:rounded-lg border border-slate-700"
+            >
+              <table class="w-full text-sm text-left text-gray-300">
+                <thead class="text-xs text-amber-400 uppercase bg-slate-800">
+                  <tr>
+                    <th scope="col" class="py-3 px-6">Jenis</th>
+                    <th scope="col" class="py-3 px-6">Kecepatan</th>
+                    <th scope="col" class="py-3 px-6">Kapasitas</th>
+                    <th scope="col" class="py-3 px-6">Harga / GB</th>
+                    <th scope="col" class="py-3 px-6">
+                      Kasus Penggunaan Utama
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="bg-slate-900 border-b border-slate-800 hover:bg-slate-800/50"
+                  >
+                    <th
+                      scope="row"
+                      class="py-4 px-6 font-medium text-white whitespace-nowrap"
+                    >
+                      Optical
+                    </th>
+                    <td class="py-4 px-6">Sangat Lambat</td>
+                    <td class="py-4 px-6">Sangat Kecil (GB)</td>
+                    <td class="py-4 px-6">Rendah (Disc)</td>
+                    <td class="py-4 px-6">Arsip lama, media fisik</td>
+                  </tr>
+                  <tr
+                    class="bg-slate-900 border-b border-slate-800 hover:bg-slate-800/50"
+                  >
+                    <th
+                      scope="row"
+                      class="py-4 px-6 font-medium text-white whitespace-nowrap"
+                    >
+                      HDD
+                    </th>
+                    <td class="py-4 px-6">Lambat</td>
+                    <td class="py-4 px-6">Sangat Besar (TB)</td>
+                    <td class="py-4 px-6">Sangat Rendah</td>
+                    <td class="py-4 px-6">Penyimpanan massal, backup</td>
+                  </tr>
+                  <tr
+                    class="bg-slate-900 border-b border-slate-800 hover:bg-slate-800/50"
+                  >
+                    <th
+                      scope="row"
+                      class="py-4 px-6 font-medium text-white whitespace-nowrap"
+                    >
+                      SSD (SATA)
+                    </th>
+                    <td class="py-4 px-6">Cepat</td>
+                    <td class="py-4 px-6">Besar (GB - TB)</td>
+                    <td class="py-4 px-6">Rendah - Sedang</td>
+                    <td class="py-4 px-6">Sistem Operasi, game</td>
+                  </tr>
+                  <tr
+                    class="bg-slate-900 border-b border-slate-800 hover:bg-slate-800/50"
+                  >
+                    <th
+                      scope="row"
+                      class="py-4 px-6 font-medium text-white whitespace-nowrap"
+                    >
+                      NVMe (PCIe)
+                    </th>
+                    <td class="py-4 px-6">Sangat Cepat</td>
+                    <td class="py-4 px-6">Besar (GB - TB)</td>
+                    <td class="py-4 px-6">Tinggi</td>
+                    <td class="py-4 px-6">Workstation, editing pro</td>
+                  </tr>
+                  <tr class="bg-slate-900 hover:bg-slate-800/50">
+                    <th
+                      scope="row"
+                      class="py-4 px-6 font-medium text-white whitespace-nowrap"
+                    >
+                      Flashdisk
+                    </th>
+                    <td class="py-4 px-6">Bervariasi</td>
+                    <td class="py-4 px-6">Kecil (GB)</td>
+                    <td class="py-4 px-6">Sedang</td>
+                    <td class="py-4 px-6">Transfer data portabel</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </div>
       </article>
 
-      <!-- ✅ SIDEBAR / ASIDE -->
       <aside
         class="bg-slate-900 border border-slate-800 rounded-lg shadow-xl p-6 space-y-10 h-fit"
       >
-        <!-- TOC -->
         <div>
           <h3 class="text-xl font-semibold text-amber-400 mb-3">Daftar Isi</h3>
           <ul class="space-y-2 text-gray-300">
@@ -341,10 +465,8 @@
           </ul>
         </div>
       </aside>
-      <!-- END ASIDE -->
     </div>
 
-    <!-- footer -->
     <footer class="bg-slate-900 text-gray-200 border-t border-slate-800">
       <div class="container mx-auto py-6 px-4">
         <p class="text-center text-sm">
